@@ -13,6 +13,6 @@ export const productsTable = pgTable("products", {
   image: varchar({ length: 255 }),
   price: doublePrecision().notNull(),
   stock: integer().notNull().default(0),
-    createdAt: timestamp().notNull().defaultNow(),
+  createdAt: timestamp().notNull().defaultNow(),
   quantity: integer().notNull().default(0),
 });
